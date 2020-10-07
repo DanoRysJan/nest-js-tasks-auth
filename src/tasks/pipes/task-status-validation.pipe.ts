@@ -1,7 +1,7 @@
 //metadata: ArgumentMetadata is optional in transform, the same with metadata
 
 import { BadRequestException, PipeTransform } from "@nestjs/common";
-import { TaskStatus } from '../task.model';
+import { TaskStatus } from '../enums/task-status.enum';
 
 export class TaskStatusValidationPipe implements PipeTransform {
   readonly allowedStatuses = [
